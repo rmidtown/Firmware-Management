@@ -58,7 +58,7 @@
                      Added the SetSettings parameter to indicate that the script should attempt to set settings
                      Changed the $Settings array in the script to be comma seperated instead of semi-colon seperated
                      Updated formatting
-        2020-09-16 - Added a LogFile parameter. Changed the default log path in full Windows to $ENV:ProgramData\ConfigJonScripts\Lenovo.
+        2020-09-16 - Added a LogFile parameter. Changed the default log path in full Windows to $ENV:ProgramData\MTGTools\Lenovo.
                      Consolidated duplicate code into new functions (Stop-Script, Get-WmiData). Made a number of minor formatting and syntax changes
                      Updated the save BIOS settings section with better logic to work when a password is set.
                      Added support for for using the system management password
@@ -89,7 +89,7 @@ param(
         }
         return $true
     })]
-    [System.IO.FileInfo]$LogFile = "$ENV:ProgramData\ConfigJonScripts\Lenovo\Manage-LenovoBiosSettings.log"
+    [System.IO.FileInfo]$LogFile = "$ENV:ProgramData\MTGTools\Lenovo\Manage-LenovoBiosSettings.log"
 )
 
 #List of settings to be configured ============================================================================================
