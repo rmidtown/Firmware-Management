@@ -24,7 +24,7 @@
         Modified: 2022-02-20
 
 	.CHANGELOG
-        2020-09-07 - Added a LogFile parameter. Changed the default log path in full Windows to $ENV:ProgramData\ConfigJonScripts\Dell.
+        2020-09-07 - Added a LogFile parameter. Changed the default log path in full Windows to $ENV:ProgramData\MTGTools\Dell.
                      Created a new function (Stop-Script) to consolidate some duplicate code and improve error reporting. Made a number of minor formatting and syntax changes
         2020-09-17 - Improved the log file path configuration
         2022-02-20 - Updated the required .dll files to support version 2.6.0 of the DellBIOSProvider module
@@ -65,7 +65,7 @@ param(
         }
         return $true
     })]
-    [System.IO.FileInfo]$LogFile = "$ENV:ProgramData\ConfigJonScripts\Dell\Install-DellBiosProvider.log"
+    [System.IO.FileInfo]$LogFile = "$ENV:ProgramData\MTGTools\Dell\Install-DellBiosProvider.log"
 )
 
 #Functions ====================================================================================================================
